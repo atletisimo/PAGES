@@ -1,0 +1,299 @@
+*{
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+.home .content h3{
+    color: white;
+}
+.search-form {
+    visibility: hidden;
+}
+.active{
+    visibility: visible;
+}
+html{
+
+    overflow-x: hidden;
+    scroll-padding-top:9rem;
+    scroll-behavior:smooth ;
+}
+body{
+background: black;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background: black;
+
+
+}
+.about .row .content h3{
+    color: white;
+
+}
+.about .content{
+    background: dimgrey;
+   position: relative;
+   right:60px;
+ height: 348px;
+
+
+
+}
+.about .row .image{
+    padding-left: 80px;
+}
+
+.about .row .content p{
+    color: #ccc;
+
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.header{
+background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top:0;left: 0;right: 0;
+    z-index: 1000;
+    height: 200px;
+}
+.header .navbar{
+    position: relative;
+    left:910px;
+    top:400px;
+    background: white;
+    visibility: hidden;
+    transition: .2s linear;
+}
+.header .cart-items-container{
+    visibility: hidden;
+}
+
+.header .cart-items-container .active{
+    visibility: visible;
+}
+.header .navbar a{
+    margin:0 1rem;
+    color: black;
+  display: block;
+    margin:1.5rem;
+    padding: 1.5rem;
+
+}
+.header .navbar a:hover{
+    color:coral;
+    border-bottom: .1rem solid coral;
+    padding-bottom: .5rem;
+    text-decoration: none;
+}
+.header .icons div{
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+.header .icons div:hover {
+color: coral;
+}
+
+.header .search-form input{
+    height: 100%;
+    width:100%;
+    text-transform: none;
+}
+.header .search-form{
+    background: white;
+    width:20rem;
+    height: 2.5rem;
+    display: flex;
+
+}
+ .logo img {
+    border-radius: 50px;
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top:100%;
+    right: -100%;
+    background: white;
+    padding: 0 1.5rem;
+
+}
+.header .cart-items-container .cart-item{
+    position: relative;
+    margin:2rem 0;
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+.header .cart-items-container .cart-item .content .price{
+    color:coral;
+}
+.header .cart-items-container .btn{
+    width:100%;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    color:white;
+    background: coral;
+    cursor: pointer;
+}
+.header .navbar.active{
+  visibility: visible;
+}
+
+.products .box-container .box .content h3{
+    color: white;
+}
+.products .box-container .box .content .stars i{
+    color: coral;
+}
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+}
+.products .box-container .box{
+    text-align: center;
+    border:2px solid antiquewhite;
+
+
+}
+.products .box-container .box:hover{
+    text-align: center;
+    border:2px solid antiquewhite;
+background: white;
+
+}
+.products .box-container .box .content .price{
+    color:white;
+}
+.products .box-container .box .content .price span {
+text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap:1.5rem;
+}
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border:2px solid antiquewhite;
+}
+.menu .box-container .box .price span {
+color: white;
+
+}
+.menu .box-container .box:hover{
+    background: white;
+}
+
+.menu .box-container .box .price span{
+    text-decoration: line-through;
+}
+.footer{
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    color: white;
+
+width: 2rem;
+    border-radius: 50%;
+
+}
+.footer .share a:hover{
+    background: coral;
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+ padding: 2rem 0;
+gap:1.5em;
+
+
+}
+.footer .links a:hover{
+    background-color: coral;
+}
+.footer .links a{
+    border: 2px solid white;
+
+    padding:8px;
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    background: dimgrey;
+flex-wrap:wrap;
+    gap:1rem;
+
+}
+
+#boja{
+    color:white;
+    text-align: center;
+    position: relative;
+    left:300px;
+    font-size: 30px;
+}
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+  margin-bottom: 2rem;
+    margin-top:2rem;
+    border: 2px solid pink;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    width: 400px;
+
+
+
+}
+#para{
+    line-height: 26px;
+    text-transform: none;
+}
+#submit{
+
+    position: relative;
+    left: 460px;
+    height: 60px;
+    border-radius: 10px;
+}
+.contact .row form .inputBox input{
+
+padding:.5rem;
+    background: dimgrey;
+
+}
+.contact .row form .inputBox span{
+    color:white;
+    padding-left: 1rem;
+
+}
